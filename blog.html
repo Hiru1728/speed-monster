@@ -20,6 +20,10 @@
         p {
             font-size: 18px;
         }
+
+        .p1 {
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -55,7 +59,25 @@
         </p>
     </div>
     <div class="font-color">
-        <h2></h2>
+        <h2>How JavaScript works Event loop</h2>
+        <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is
+            empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which
+            effectively runs it. Such an iteration is called a tick in the Event Loop.At some point during the event
+            loop, the runtime starts handling the messages on the queue, starting with the oldest one. To do so, the
+            message is removed from the queue and its corresponding function is called with the message as an input
+            parameter. As always, calling a function creates a new stack frame for that function's use.
+            The processing of functions continues until the stack is once again empty. Then, the event loop will process
+            the next message in the queue
+        </p>
+        <p class="p1">Heap</p>
+        <p>
+            Objects are allocated in a heap which is just a name to denote a large (mostly unstructured) region of
+            memory.
+        </p>
+        <p class="p1">Queue</p>
+        <p>A JavaScript runtime uses a message queue, which is a list of messages to be processed. Each message has an
+            associated function that gets called to handle the message.
+        </p>
     </div>
     <div class="font-color">
         <h2>How to check if a JavaScript object property is undefined</h2>
@@ -65,10 +87,10 @@
             primitive types.A variable that has not been assigned a value is of type undefined. A method or statement
             also returns undefined if the variable that is being evaluated does not have an assigned value. A function
             returns undefined if a value was not returned.
-
-            1) Strict equality and undefined.
-            2) typeof operator and undefined.
-            3) void operator and undefined.
+            <br>
+            1) Strict equality and undefined. <br>
+            2) typeof operator and undefined. <br>
+            3) void operator and undefined. <br>
         </p>
     </div>
 
