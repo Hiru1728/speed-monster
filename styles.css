@@ -163,10 +163,8 @@ button {
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(92.49deg,
-      rgba(255, 255, 255, 0.1) 0.18%,
-      rgba(255, 255, 255, 0.05) 99.85%);
+  /* background: rgb(255, 255, 255); */
+  background: linear-gradient(92.49deg, #191414d4 0.18%, #191614d1 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
